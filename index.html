@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Shopping Cart</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Total</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Product 1</td>
+					<td>$10</td>
+					<td>
+						<button class="decrement">-</button>
+						<span class="quantity">1</span>
+						<button class="increment">+</button>
+					</td>
+					<td class="total">$10</td>
+					<td>
+						<button class="delete">Delete</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Product 2</td>
+					<td>$20</td>
+					<td>
+						<button class="decrement">-</button>
+						<span class="quantity">1</span>
+						<button class="increment">+</button>
+					</td>
+					<td class="total">$20</td>
+					<td>
+						<button class="delete">Delete</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Product 3</td>
+					<td>$30</td>
+					<td>
+						<button class="decrement">-</button>
+						<span class="quantity">1</span>
+						<button class="increment">+</button>
+					</td>
+					<td class="total">$30</td>
+					<td>
+						<button class="delete">Delete</button>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Total</td>
+					<td id="cart-total">$60</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
